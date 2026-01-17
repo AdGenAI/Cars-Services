@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="نظام متكامل لإدارة خدمات السيارات - قوة، سرعة، واحترافية في منصة واحدة">
+    <meta name="keywords" content="إدارة السيارات, نظام تأجير السيارات, خدمات السيارات, برنامج إدارة, حجوزات">
+    <meta name="author" content="Cars Services System">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="نظام إدارة خدمات السيارات المتكامل">
+    <meta property="og:description" content="قوة، سرعة، واحترافية في منصة واحدة">
+
+    <title>نظام إدارة خدمات السيارات | Cars Services System</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/hero-enhanced.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <span class="logo-icon">🚗</span>
+                    <span class="logo-text">Cars Services</span>
+                </div>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#features" class="nav-link">الميزات</a></li>
+                    <li><a href="#system" class="nav-link">النظام</a></li>
+                    <li><a href="#pricing" class="nav-link">الأسعار</a></li>
+                    <li><a href="#faq" class="nav-link">الأسئلة</a></li>
+                    <li><a href="#contact" class="nav-link">اتصل بنا</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="btn btn-secondary btn-sm">تسجيل الدخول</button>
+                    <button class="btn btn-primary btn-sm">ابدأ مجاناً</button>
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        نظام متكامل
+                        <span class="text-gradient">لإدارة خدمات السيارات</span>
+                    </h1>
+                    <p class="hero-description">
+                        قوة، سرعة، واحترافية في منصة واحدة. أدِر عملائك، حجوزاتك، وفواتيرك بكفاءة غير مسبوقة
+                    </p>
+
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-lg">
+                            <span>ابدأ تجربتك المجانية</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="btn btn-secondary btn-lg">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path
+                                    d="M6.3 2.84A10 10 0 0117 10c0 5.52-4.48 10-10 10S-3 15.52-3 10 1.48 0 7 0v2.84z" />
+                            </svg>
+                            <span>شاهد العرض التوضيحي</span>
+                        </button>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-value" data-target="1000">0</div>
+                            <div class="stat-label">معاملة يومياً</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" data-target="500">0</div>
+                            <div class="stat-label">عميل نشط</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" data-target="2000">0</div>
+                            <div class="stat-label">سيارة مُدارة</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">4.9</div>
+                            <div class="stat-label">⭐ تقييم العملاء</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="mockup-container">
+                        <div class="mockup-screen">
+                            <div class="mockup-header">
+                                <div class="mockup-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="mockup-content">
+                                <!-- Dashboard Header -->
+                                <div class="demo-header">
+                                    <div class="demo-title">لوحة التحكم</div>
+                                    <div class="demo-actions">
+                                        <div class="demo-notification">
+                                            <span class="notification-dot"></span>
+                                            🔔
+                                        </div>
+                                        <div class="demo-avatar"></div>
+                                    </div>
+                                </div>
+
+                                <!-- KPI Cards -->
+                                <div class="demo-kpi-grid">
+                                    <div class="demo-kpi purple">
+                                        <div class="kpi-icon">💰</div>
+                                        <div class="kpi-details">
+                                            <div class="kpi-value">1,234</div>
+                                            <div class="kpi-label">إجمالي الفواتير</div>
+                                            <div class="kpi-trend up">+12.5%</div>
+                                        </div>
+                                    </div>
+                                    <div class="demo-kpi blue">
+                                        <div class="kpi-icon">📅</div>
+                                        <div class="kpi-details">
+                                            <div class="kpi-value">856</div>
+                                            <div class="kpi-label">حجوزات اليوم</div>
+                                            <div class="kpi-trend up">+8.3%</div>
+                                        </div>
+                                    </div>
+                                    <div class="demo-kpi green">
+                                        <div class="kpi-icon">👥</div>
+                                        <div class="kpi-details">
+                                            <div class="kpi-value">2,451</div>
+                                            <div class="kpi-label">عملاء نشطين</div>
+                                            <div class="kpi-trend up">+5.7%</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Chart Section -->
+                                <div class="demo-chart-section">
+                                    <div class="chart-title">الإيرادات الشهرية</div>
+                                    <div class="demo-chart">
+                                        <div class="chart-bars">
+                                            <div class="bar" style="height: 60%"></div>
+                                            <div class="bar" style="height: 85%"></div>
+                                            <div class="bar" style="height: 70%"></div>
+                                            <div class="bar" style="height: 95%"></div>
+                                            <div class="bar" style="height: 75%"></div>
+                                            <div class="bar" style="height: 90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-icon icon-1">📊</div>
+                        <div class="floating-icon icon-2">🚗</div>
+                        <div class="floating-icon icon-3">💰</div>
+                        <div class="floating-icon icon-4">📅</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">لماذا تختار نظامنا؟</h2>
+                <p class="section-description">ميزات قوية تجعل إدارة أعمالك أسهل وأكثر كفاءة</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">سرعة فائقة</h3>
+                    <p class="feature-description">أداء خاطف للبرق مع استجابة فورية لجميع العمليات</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">🎨</div>
+                    <h3 class="feature-title">واجهة عصرية</h3>
+                    <p class="feature-description">تصميم حديث وجذاب مع تجربة مستخدم سلسة ومريحة</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">متوافق مع الأجهزة</h3>
+                    <p class="feature-description">يعمل بسلاسة على جميع الأجهزة والمتصفحات</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title">أمان متقدم</h3>
+                    <p class="feature-description">تشفير من الدرجة الأولى مع نسخ احتياطية تلقائية</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">تقارير شاملة</h3>
+                    <p class="feature-description">4 أنواع من التقارير التحليلية مع تصدير PDF/Excel</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">🌐</div>
+                    <h3 class="feature-title">دعم كامل للعربية</h3>
+                    <p class="feature-description">واجهة RTL احترافية مع خطوط عربية جميلة</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">🚀</div>
+                    <h3 class="feature-title">تكامل سهل</h3>
+                    <p class="feature-description">API موثقة بالكامل مع Webhooks للتكامل مع أنظمتك</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">💪</div>
+                    <h3 class="feature-title">دعم فني مميز</h3>
+                    <p class="feature-description">دعم على مدار الساعة مع تحديثات وتدريب مجاني</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Sections Preview -->
+    <section class="system-preview" id="system">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">أقسام النظام</h2>
+                <p class="section-description">8 أقسام متكاملة لإدارة كل جوانب أعمالك</p>
+            </div>
+
+            <!-- Section 1: Clients -->
+            <div class="system-section">
+                <div class="system-content" data-aos="fade-right">
+                    <div class="system-badge">01</div>
+                    <h3 class="system-title">إدارة العملاء</h3>
+                    <p class="system-description">تتبع كامل لبيانات العملاء مع إمكانية ربط سيارتين لكل عميل</p>
+                    <ul class="system-features">
+                        <li>✅ إضافة/تعديل/حذف عملاء</li>
+                        <li>✅ تصنيف حسب النوع (أفراد/مؤسسات)</li>
+                        <li>✅ فئات متعددة (عادي/مهتم/VIP)</li>
+                        <li>✅ ربط بمسوق وحتى سيارتين</li>
+                        <li>✅ بحث وفلترة متقدمة</li>
+                    </ul>
+                </div>
+                <div class="system-visual" data-aos="fade-left">
+                    <div class="mockup-browser">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="browser-url">dashboard/clients</div>
+                        </div>
+                        <div class="browser-content">
+                            <div class="table-mockup">
+                                <div class="table-row"></div>
+                                <div class="table-row"></div>
+                                <div class="table-row"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Reservations -->
+            <div class="system-section reverse">
+                <div class="system-visual" data-aos="fade-right">
+                    <div class="mockup-browser">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="browser-url">dashboard/reservations</div>
+                        </div>
+                        <div class="browser-content">
+                            <div class="calendar-mockup">
+                                <div class="calendar-header"></div>
+                                <div class="calendar-grid">
+                                    <div class="calendar-day"></div>
+                                    <div class="calendar-day"></div>
+                                    <div class="calendar-day active"></div>
+                                    <div class="calendar-day"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="system-content" data-aos="fade-left">
+                    <div class="system-badge">02</div>
+                    <h3 class="system-title">إدارة الحجوزات</h3>
+                    <p class="system-description">تقويم تفاعلي لإدارة المواعيد والحجوزات بكفاءة عالية</p>
+                    <ul class="system-features">
+                        <li>✅ عرض تقويمي (شهري/أسبوعي/يومي)</li>
+                        <li>✅ سحب وإفلات للجدولة السريعة</li>
+                        <li>✅ ألوان مميزة حسب الحالة</li>
+                        <li>✅ ربط بالعميل والسيارة والخدمة</li>
+                        <li>✅ إنشاء فاتورة مباشرة من الحجز</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 3: Invoices -->
+            <div class="system-section">
+                <div class="system-content" data-aos="fade-right">
+                    <div class="system-badge">03</div>
+                    <h3 class="system-title">نظام الفواتير</h3>
+                    <p class="system-description">فواتير احترافية في خطوات بسيطة مع تتبع كامل للمدفوعات</p>
+                    <ul class="system-features">
+                        <li>✅ إنشاء من 4 خطوات سهلة</li>
+                        <li>✅ خصومات مرنة (على الفاتورة أو كل خدمة)</li>
+                        <li>✅ طرق دفع متعددة</li>
+                        <li>✅ تتبع حالة الدفع</li>
+                        <li>✅ تصدير PDF وصورة</li>
+                    </ul>
+                </div>
+                <div class="system-visual" data-aos="fade-left">
+                    <div class="mockup-browser">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="browser-url">dashboard/invoices</div>
+                        </div>
+                        <div class="browser-content">
+                            <div class="invoice-mockup">
+                                <div class="invoice-header"></div>
+                                <div class="invoice-items">
+                                    <div class="invoice-item"></div>
+                                    <div class="invoice-item"></div>
+                                </div>
+                                <div class="invoice-total"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More sections can be added here -->
+            <div class="more-sections" data-aos="fade-up">
+                <h4>والمزيد من الميزات...</h4>
+                <div class="sections-list">
+                    <div class="section-item">📊 التقارير التحليلية</div>
+                    <div class="section-item">👔 إدارة المسوقين</div>
+                    <div class="section-item">👨‍💼 إدارة الموظفين</div>
+                    <div class="section-item">🚗 سيارات العملاء</div>
+                    <div class="section-item">⚙️ الإعدادات الشاملة</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Banner -->
+    <section class="stats-banner">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-box" data-aos="fade-up">
+                    <div class="stat-number">8</div>
+                    <div class="stat-text">أقسام رئيسية</div>
+                </div>
+                <div class="stat-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-text">وقت التشغيل</div>
+                </div>
+                <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number">&lt;100ms</div>
+                    <div class="stat-text">سرعة الاستجابة</div>
+                </div>
+                <div class="stat-box" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-text">دعم فني</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">مبني بأحدث التقنيات</h2>
+                <p class="section-description">نستخدم أفضل الأدوات لضمان أداء وأمان متميزين</p>
+            </div>
+
+            <div class="tech-grid">
+                <div class="tech-item" data-aos="zoom-in">
+                    <div class="tech-logo">⚛️</div>
+                    <div class="tech-name">React 19</div>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="50">
+                    <div class="tech-logo">▲</div>
+                    <div class="tech-name">Next.js 15</div>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="tech-logo">TS</div>
+                    <div class="tech-name">TypeScript</div>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="tech-logo">🎨</div>
+                    <div class="tech-name">Tailwind CSS</div>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="tech-logo">🐘</div>
+                    <div class="tech-name">PostgreSQL</div>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="tech-logo">🔐</div>
+                    <div class="tech-name">NextAuth</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">خطة تناسب احتياجاتك</h2>
+                <p class="section-description">اختر الخطة المثالية لحجم أعمالك</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="fade-up">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">الأساسية</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">99</span>
+                            <span class="price-currency">ريال</span>
+                            <span class="price-period">/شهر</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ حتى 100 عميل</li>
+                        <li>✓ 500 فاتورة/شهر</li>
+                        <li>✓ دعم بريد إلكتروني</li>
+                        <li>✓ مستخدم واحد</li>
+                        <li>✓ تحديثات مجانية</li>
+                    </ul>
+                    <button class="btn btn-outline btn-block">ابدأ الآن</button>
+                </div>
+
+                <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-badge">الأكثر شعبية</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">الاحترافية</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">299</span>
+                            <span class="price-currency">ريال</span>
+                            <span class="price-period">/شهر</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ عملاء غير محدودين</li>
+                        <li>✓ فواتير غير محدودة</li>
+                        <li>✓ دعم هاتفي</li>
+                        <li>✓ 5 مستخدمين</li>
+                        <li>✓ تقارير متقدمة</li>
+                        <li>✓ تخصيص الألوان</li>
+                    </ul>
+                    <button class="btn btn-primary btn-block">ابدأ الآن</button>
+                </div>
+
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">المؤسسات</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">حسب الطلب</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ كل ميزات الاحترافية</li>
+                        <li>✓ مستخدمين غير محدودين</li>
+                        <li>✓ تخصيص كامل</li>
+                        <li>✓ API مخصص</li>
+                        <li>✓ دعم VIP</li>
+                        <li>✓ تدريب مخصص</li>
+                    </ul>
+                    <button class="btn btn-outline btn-block">اتصل بنا</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">الأسئلة الشائعة</h2>
+                <p class="section-description">إجابات على أكثر الأسئلة شيوعاً</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3>ما هي متطلبات التشغيل؟</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>النظام يعمل على أي متصفح حديث (Chrome, Firefox, Safari, Edge) ولا يحتاج إلى تثبيت أي برامج
+                            إضافية.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="50">
+                    <div class="faq-question">
+                        <h3>هل يمكن تجربته مجاناً؟</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم! نوفر تجربة مجانية لمدة 14 يوم دون الحاجة لبطاقة ائتمانية.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h3>هل البيانات آمنة؟</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، نستخدم تشفير SSL/TLS ونسخ احتياطية يومية. بياناتك محمية بأعلى معايير الأمان.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                    <div class="faq-question">
+                        <h3>هل يدعم اللغة العربية؟</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم! النظام مصمم بالكامل لدعم اللغة العربية مع واجهة RTL احترافية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-final" id="contact">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2 class="cta-title">جاهز للبدء؟</h2>
+                <p class="cta-description">انضم لمئات الشركات التي تثق بنا لإدارة أعمالها</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-lg">ابدأ تجربتك المجانية</button>
+                    <button class="btn btn-secondary btn-lg">تواصل معنا</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4 class="footer-title">عن النظام</h4>
+                    <p class="footer-description">نظام متكامل لإدارة خدمات السيارات مع ميزات قوية وواجهة عصرية.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link">𝕏</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">ig</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">الميزات</a></li>
+                        <li><a href="#system">النظام</a></li>
+                        <li><a href="#pricing">الأسعار</a></li>
+                        <li><a href="#faq">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">الدعم</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">التوثيق</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                        <li><a href="#">الدعم الفني</a></li>
+                        <li><a href="#">المدونة</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">القانوني</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">الشروط والأحكام</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">سياسة الاسترجاع</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 Cars Services System. جميع الحقوق محفوظة.</p>
+                <p>صُنع بـ ❤️ في السعودية</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-content">
+            <div class="loader-logo">🚗</div>
+            <div class="loader-text">Cars Services</div>
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="العودة للأعلى">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <p>🍪 نستخدم ملفات تعريف الارتباط لتحسين تجربتك. باستمرارك في التصفح، فإنك توافق على <a href="#">سياسة
+                        الخصوصية</a>.</p>
+            </div>
+            <div class="cookie-actions">
+                <button class="btn btn-primary btn-sm" id="acceptCookies">موافق</button>
+                <button class="btn btn-outline btn-sm" id="declineCookies">رفض</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Live Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <button class="chat-button" id="chatButton">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+            </svg>
+            <span class="chat-badge">1</span>
+        </button>
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <div class="chat-header-content">
+                    <div class="chat-avatar"></div>
+                    <div>
+                        <div class="chat-title">الدعم الفني</div>
+                        <div class="chat-status">متصل الآن</div>
+                    </div>
+                </div>
+                <button class="chat-close" id="chatClose">×</button>
+            </div>
+            <div class="chat-body">
+                <div class="chat-message bot">
+                    <div class="message-content">مرحباً! كيف يمكنني مساعدتك اليوم؟ 👋</div>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" placeholder="اكتب رسالتك..." class="chat-input">
+                <button class="chat-send">إرسال</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Demo Modal -->
+    <div class="modal" id="demoModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">×</button>
+            <div class="modal-header">
+                <h2>شاهد النظام بالعمل</h2>
+                <p>جولة سريعة في أهم الميزات</p>
+            </div>
+            <div class="modal-body">
+                <div class="video-placeholder">
+                    <div class="play-button">▶</div>
+                    <p>عرض توضيحي تفاعلي</p>
+                </div>
+                <div class="demo-features">
+                    <div class="demo-feature-item">✅ إدارة العملاء</div>
+                    <div class="demo-feature-item">✅ نظام الحجوزات</div>
+                    <div class="demo-feature-item">✅ الفواتير الإلكترونية</div>
+                    <div class="demo-feature-item">✅ التقارير التحليلية</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary btn-lg">ابدأ تجربتك المجانية</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trust Badges Section (Before Footer) -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-stats">
+                <div class="trust-stat">
+                    <div class="trust-number" data-count="500">0</div>
+                    <div class="trust-label">شركة تثق بنا</div>
+                </div>
+                <div class="trust-stat">
+                    <div class="trust-number" data-count="50000">0</div>
+                    <div class="trust-label">مستخدم نشط</div>
+                </div>
+                <div class="trust-stat">
+                    <div class="trust-number" data-count="1000000">0</div>
+                    <div class="trust-label">معاملة شهرياً</div>
+                </div>
+                <div class="trust-stat">
+                    <div class="trust-number">4.9/5</div>
+                    <div class="trust-label">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+            <div class="trust-badges">
+                <div class="badge-item">🔒 SSL Secured</div>
+                <div class="badge-item">✓ ISO 27001</div>
+                <div class="badge-item">🛡️ GDPR Compliant</div>
+                <div class="badge-item">⚡ 99.9% Uptime</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section (Before Footer) -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>📧 اشترك في نشرتنا البريدية</h3>
+                    <p>احصل على آخر التحديثات والعروض الحصرية</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="أدخل بريدك الإلكتروني" class="newsletter-input" required>
+                    <button type="submit" class="btn btn-primary">اشترك الآن</button>
+                </form>
+                <div class="newsletter-guarantee">🎁 خصم 10% على أول اشتراك</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/features.js"></script>
+</body>
+
+</html>

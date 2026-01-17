@@ -1,0 +1,413 @@
+/* ===================================
+   Components
+   =================================== */
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+    padding: var(--space-sm) var(--space-lg);
+    font-weight: 600;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    font-family: var(--font-primary);
+}
+
+.btn-primary {
+    background: var(--gradient-primary);
+    color: var(--white);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-xl);
+}
+
+.btn-secondary {
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.btn-outline {
+    background: transparent;
+    border-color: var(--gray-300);
+    color: var(--gray-700);
+}
+
+.btn-outline:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+}
+
+.btn-lg {
+    padding: var(--space-md) var(--space-xl);
+    font-size: 1.125rem;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* Cards */
+.card {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+/* Feature Card */
+.feature-card {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    padding: var(--space-xl);
+    text-align: center;
+    border: 2px solid var(--gray-200);
+    transition: all var(--transition-base);
+}
+
+.feature-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-2xl);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-md);
+    display: inline-block;
+    transition: transform var(--transition-base);
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.feature-title {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-sm);
+    color: var(--primary-dark);
+}
+
+.feature-description {
+    color: var(--gray-600);
+    font-size: 0.938rem;
+}
+
+/* Mockup Browser */
+.mockup-browser {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-2xl);
+    overflow: hidden;
+}
+
+.browser-header {
+    background: var(--gray-200);
+    padding: var(--space-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.browser-dots {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.browser-dots span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--gray-400);
+}
+
+.browser-dots span:nth-child(1) {
+    background: #ff5f56;
+}
+
+.browser-dots span:nth-child(2) {
+    background: #ffbd2e;
+}
+
+.browser-dots span:nth-child(3) {
+    background: #27c93f;
+}
+
+.browser-url {
+    flex: 1;
+    background: var(--white);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    color: var(--gray-600);
+    text-align: center;
+}
+
+.browser-content {
+    padding: var(--space-lg);
+    min-height: 300px;
+    background: var(--gray-100);
+}
+
+/* Table Mockup */
+.table-mockup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.table-row {
+    background: var(--white);
+    height: 60px;
+    border-radius: var(--radius-md);
+    animation: shimmer 2s infinite;
+}
+
+/* Calendar Mockup */
+.calendar-mockup {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+}
+
+.calendar-header {
+    height: 40px;
+    background: var(--gray-200);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-md);
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: var(--space-xs);
+}
+
+.calendar-day {
+    aspect-ratio: 1;
+    background: var(--gray-100);
+    border-radius: var(--radius-sm);
+}
+
+.calendar-day.active {
+    background: var(--gradient-primary);
+}
+
+/* Invoice Mockup */
+.invoice-mockup {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+}
+
+.invoice-header {
+    height: 80px;
+    background: var(--gray-200);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-md);
+}
+
+.invoice-items {
+    margin-bottom: var(--space-md);
+}
+
+.invoice-item {
+    height: 50px;
+    background: var(--gray-100);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-sm);
+}
+
+.invoice-total {
+    height: 60px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-md);
+}
+
+/* Shimmer Effect */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.shimmer {
+    background: linear-gradient(90deg,
+            var(--gray-100) 0%,
+            var(--gray-200) 50%,
+            var(--gray-100) 100%);
+    background-size: 1000px 100%;
+    animation: shimmer 2s infinite;
+}
+
+/* System Badge */
+.system-badge {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    color: var(--white);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+}
+
+/* FAQ */
+.faq-item {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-md);
+    border: 2px solid var(--gray-200);
+    transition: all var(--transition-base);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 1.125rem;
+}
+
+.faq-icon {
+    font-size: 1.5rem;
+    font-weight: 300;
+    transition: transform var(--transition-base);
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-slow);
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+    padding-top: var(--space-md);
+}
+
+/* Pricing Card */
+.pricing-card {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    padding: var(--space-xl);
+    border: 2px solid var(--gray-200);
+    transition: all var(--transition-base);
+    position: relative;
+}
+
+.pricing-card.featured {
+    border-color: var(--primary);
+    transform: scale(1.05);
+    box-shadow: var(--shadow-2xl);
+}
+
+.pricing-badge {
+    position: absolute;
+    top: -15px;
+    right: var(--space-lg);
+    background: var(--gradient-primary);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-full);
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-lg);
+    border-bottom: 2px solid var(--gray-200);
+}
+
+.pricing-title {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-sm);
+}
+
+.pricing-price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+.price-amount {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.price-currency,
+.price-period {
+    font-size: 1rem;
+    color: var(--gray-600);
+}
+
+.pricing-features {
+    margin-bottom: var(--space-xl);
+}
+
+.pricing-features li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--gray-200);
+    color: var(--gray-700);
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .feature-card {
+        padding: var(--space-lg);
+    }
+
+    .pricing-card.featured {
+        transform: none;
+    }
+}

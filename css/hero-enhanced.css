@@ -1,0 +1,489 @@
+/* ===================================
+   Enhanced Hero Mockup Styles
+   =================================== */
+
+/* Mockup Container with 3D Perspective */
+.mockup-container {
+    perspective: 1500px;
+    transform-style: preserve-3d;
+    position: relative;
+    animation: mockupEntrance 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Glow Effect behind mockup */
+.mockup-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(ellipse at center,
+            rgba(103, 126, 234, 0.3) 0%,
+            transparent 70%);
+    filter: blur(60px);
+    z-index: -1;
+    animation: glowPulse 4s ease-in-out infinite;
+}
+
+/* Mockup Screen with 3D transform */
+.mockup-screen {
+    transform: perspective(1500px) rotateY(-15deg) rotateX(5deg);
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow:
+        0 50px 100px -20px rgba(0, 0, 0, 0.5),
+        0 30px 60px -30px rgba(103, 126, 234, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        0 0 80px -10px rgba(103, 126, 234, 0.3);
+}
+
+.mockup-screen:hover {
+    transform: perspective(1500px) rotateY(-5deg) rotateX(2deg) scale(1.02);
+    box-shadow:
+        0 60px 120px -20px rgba(0, 0, 0, 0.6),
+        0 40px 80px -30px rgba(103, 126, 234, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15),
+        0 0 100px -10px rgba(103, 126, 234, 0.5);
+}
+
+/* Enhanced Mockup Header with Glassmorphism */
+.mockup-header {
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.15) 0%,
+            rgba(255, 255, 255, 0.05) 100%);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Improved Browser Dots */
+.mockup-dots span {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.mockup-dots span:nth-child(1) {
+    background: linear-gradient(145deg, #ff6b6b, #ff5252);
+}
+
+.mockup-dots span:nth-child(2) {
+    background: linear-gradient(145deg, #ffd93d, #ffb800);
+}
+
+.mockup-dots span:nth-child(3) {
+    background: linear-gradient(145deg, #6bcf7f, #44bd62);
+}
+
+.mockup-dots span:hover {
+    transform: scale(1.2);
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* Mockup Content with Gradient Overlay */
+.mockup-content {
+    padding: var(--space-lg);
+    min-height: 450px;
+    background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+}
+
+.mockup-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: linear-gradient(180deg,
+            rgba(103, 126, 234, 0.08) 0%,
+            transparent 100%);
+    pointer-events: none;
+}
+
+/* Dashboard Header */
+.demo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-md);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.demo-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gray-800);
+}
+
+.demo-actions {
+    display: flex;
+    gap: var(--space-md);
+    align-items: center;
+}
+
+.demo-notification {
+    position: relative;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.demo-notification:hover {
+    transform: scale(1.1);
+}
+
+.notification-dot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    background: #ff5252;
+    border-radius: 50%;
+    border: 2px solid #f8f9fa;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.demo-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 4px 10px rgba(103, 126, 234, 0.4);
+}
+
+/* KPI Grid */
+.demo-kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+/* KPI Cards */
+.demo-kpi {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: var(--space-md);
+    display: flex;
+    gap: var(--space-md);
+    align-items: center;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    animation: cardPulse 3s ease-in-out infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+.demo-kpi::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    transition: width 0.3s;
+}
+
+.demo-kpi:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.demo-kpi:hover::before {
+    width: 8px;
+}
+
+.demo-kpi:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.demo-kpi:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.demo-kpi:nth-child(3) {
+    animation-delay: 1s;
+}
+
+/* Purple KPI */
+.demo-kpi.purple {
+    background: linear-gradient(135deg,
+            rgba(126, 87, 194, 0.1) 0%,
+            rgba(103, 126, 234, 0.05) 100%);
+    border: 1px solid rgba(126, 87, 194, 0.2);
+}
+
+.demo-kpi.purple::before {
+    background: linear-gradient(180deg, #7e57c2 0%, #667eea 100%);
+}
+
+/* Blue KPI */
+.demo-kpi.blue {
+    background: linear-gradient(135deg,
+            rgba(66, 153, 225, 0.1) 0%,
+            rgba(49, 130, 206, 0.05) 100%);
+    border: 1px solid rgba(66, 153, 225, 0.2);
+}
+
+.demo-kpi.blue::before {
+    background: linear-gradient(180deg, #4299e1 0%, #3182ce 100%);
+}
+
+/* Green KPI */
+.demo-kpi.green {
+    background: linear-gradient(135deg,
+            rgba(72, 187, 120, 0.1) 0%,
+            rgba(56, 161, 105, 0.05) 100%);
+    border: 1px solid rgba(72, 187, 120, 0.2);
+}
+
+.demo-kpi.green::before {
+    background: linear-gradient(180deg, #48bb78 0%, #38a169 100%);
+}
+
+/* KPI Icon */
+.kpi-icon {
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.kpi-details {
+    flex: 1;
+}
+
+.kpi-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gray-800);
+    margin-bottom: 0.25rem;
+}
+
+.kpi-label {
+    font-size: 0.75rem;
+    color: var(--gray-600);
+    margin-bottom: 0.25rem;
+}
+
+.kpi-trend {
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.kpi-trend.up {
+    color: #38a169;
+}
+
+.kpi-trend.up::before {
+    content: '↑';
+}
+
+/* Chart Section */
+.demo-chart-section {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: var(--space-md);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.chart-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gray-800);
+    margin-bottom: var(--space-md);
+}
+
+.demo-chart {
+    height: 120px;
+    position: relative;
+}
+
+.chart-bars {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+    gap: 0.5rem;
+}
+
+.bar {
+    flex: 1;
+    background: linear-gradient(180deg,
+            rgba(103, 126, 234, 0.8) 0%,
+            rgba(103, 126, 234, 0.4) 100%);
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    animation: barGrow 1s ease-out forwards;
+    transform-origin: bottom;
+}
+
+.bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 4px 4px 0 0;
+}
+
+.bar:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.bar:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.bar:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.bar:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.bar:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.bar:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+/* Enhanced Floating Icons */
+.floating-icon {
+    position: absolute;
+    font-size: 2.5rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow:
+        0 10px 30px rgba(103, 126, 234, 0.4),
+        inset 0 2px 10px rgba(255, 255, 255, 0.3);
+    animation: float 6s ease-in-out infinite, iconRotate 10s linear infinite;
+    backdrop-filter: blur(10px);
+}
+
+.floating-icon.icon-1 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    animation-delay: 0s, 0s;
+}
+
+.floating-icon.icon-2 {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    animation-delay: -2s, -3s;
+}
+
+.floating-icon.icon-3 {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    animation-delay: -4s, -6s;
+}
+
+.floating-icon.icon-4 {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    animation-delay: -1s, -2s;
+}
+
+/* Animations */
+@keyframes mockupEntrance {
+    0% {
+        opacity: 0;
+        transform: perspective(1500px) rotateY(-30deg) rotateX(10deg) translateZ(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: perspective(1500px) rotateY(-15deg) rotateX(5deg) translateZ(0);
+    }
+}
+
+@keyframes glowPulse {
+
+    0%,
+    100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes cardPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+}
+
+@keyframes barGrow {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+@keyframes iconRotate {
+
+    0%,
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1.1);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .mockup-screen {
+        transform: perspective(1000px) rotateY(-10deg) rotateX(3deg);
+    }
+
+    .demo-kpi-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-sm);
+    }
+
+    .floating-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+    }
+}
